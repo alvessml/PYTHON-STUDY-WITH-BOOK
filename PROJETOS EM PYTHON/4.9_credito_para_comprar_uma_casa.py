@@ -8,4 +8,4 @@ if prestacao <= prestacao_max:
     print(
         f"Emprestimo APROVADO!!! Sua prestação mensal será de R${prestacao:.2f}")
 else:
-    print(f"Emprestimo NEGADO!")
+    print(f"Emprestimo NEGADO! Sua prestação mensal seria de R${prestacao:.2f}")
