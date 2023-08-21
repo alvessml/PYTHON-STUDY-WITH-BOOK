@@ -7,7 +7,7 @@ for c in range(1, num + 1):
     else:
         print("\033[31m", end="")
     print(f"{c}", end=" ")
-print(f"\n\033[m O número {num} foi divisível {tot} vezes]")
+print(f"\n\033[m O número {num} foi divisível {tot} vezes")
 if tot == 2:
     print("Este número é PRIMO!")
 else:
