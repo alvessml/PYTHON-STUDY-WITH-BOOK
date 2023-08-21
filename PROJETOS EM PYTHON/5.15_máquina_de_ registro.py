@@ -1,4 +1,4 @@
-# c = código 
+# c = código
 # x = preço
 # q = quantidade
 print("-="*30)
