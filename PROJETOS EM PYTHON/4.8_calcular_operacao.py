@@ -1,6 +1,6 @@
 d1 = float(input("Digite o primeiro número: "))
 d2 = float(input("Digite o segundo número: "))
-print("-=" * 30 )
+print("-=" * 30)
 print("""[1] Adição 
 [2] Subtração
 [3] Multiplicação
