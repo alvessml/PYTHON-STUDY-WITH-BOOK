@@ -11,18 +11,26 @@ while True:
     x = 0
     sair = False
     while x < len(operação): 
-        if operação[x] == A:
+        if operação[x] == "A":
             if len(fila) > 0:
                 atendido = fila.pop(0)
                 print(f"Cliente {atendido} atendido.")
+                print("-=" * 30)
             else:
                 print("Fila vazia! Ninguém para atender.")
-        elif operação[x] == F:
+                print("-=" * 30)
+        elif operação[x] == "F":
             último += 1
             fila.append(último)
-        elif operação[x] == S:
+        elif operação[x] == "S":
             sair = True
             break
         else:
-            print(f"Operação inválida: {operação[x]} na posição {x}")
+            print(f"Operação inválida: {operação[x]} na posição {x}! Digite apenas F, A ou S!")
+            print("-=" * 30)
+        x += 1
+    if sair:
+        break
+
+        
 
