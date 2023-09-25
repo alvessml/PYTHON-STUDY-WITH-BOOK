@@ -31,6 +31,3 @@ while True:
         x += 1
     if sair:
         break
-
-        
-
