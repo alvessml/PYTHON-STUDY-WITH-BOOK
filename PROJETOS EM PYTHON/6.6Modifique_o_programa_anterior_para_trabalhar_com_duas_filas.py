@@ -17,6 +17,32 @@ while True:
     x = 0
     sair = False
     while x < len(operação):
-        if operação == "A":
+        if operação[x] == "A":
             if len(fila1) > 0:
-                
+                atendido = fila1.pop(0)
+                print(f"Cliente {atendido} atendido. ")
+                print("-=" * 30)
+            else:
+                print("Fila vazia! Ninguém para atender.")
+                print("-=" * 30)
+        elif operação[x] == "B":
+            if len(fila2) > 0:
+                atendido = fila2.pop(0)
+                print(f"Cliente {atendido} atendido.")
+            else:
+                print("Fila vazia! Ninguém para atender.")
+                print("-=" * 30)
+        elif operação[x] == "F":
+            fila1.append(ultimo1 + 1)
+        elif operação[x] == "G":
+            fila2.append(ultimo2 + 2)
+        elif operação[x] == "S":
+            sair = True
+            break
+        else:
+            print(f"Operação inválida: {operação[x]} na posição {x}! Digite somente A, B, F, G ou S")
+            print("-=" * 30)
+        x += 1
+    if sair:
+        break
+        
