@@ -3,7 +3,7 @@ ultimo2 = 10
 fila1 = list(range(1, ultimo1 + 1))
 fila2 = list(range(1, ultimo2 + 1))
 while True:
-    print(f"""Existem {len(fila1)} na fila A e {fila2} na fila B; 
+    print(f"""Existem {len(fila1)} na fila A e {len(fila2)} na fila B; 
           Fila A atual: {fila1};
           Fila B atual: {fila2}.
           
@@ -20,7 +20,7 @@ while True:
         if operação[x] == "A":
             if len(fila1) > 0:
                 atendido = fila1.pop(0)
-                print(f"Cliente {atendido} atendido. ")
+                print(f"Cliente {atendido} da fila 1 atendido. ")
                 print("-=" * 30)
             else:
                 print("Fila vazia! Ninguém para atender.")
@@ -28,14 +28,17 @@ while True:
         elif operação[x] == "B":
             if len(fila2) > 0:
                 atendido = fila2.pop(0)
-                print(f"Cliente {atendido} atendido.")
+                print(f"Cliente {atendido} da fila 2 atendido.")
+                print("-=" * 30)
             else:
                 print("Fila vazia! Ninguém para atender.")
                 print("-=" * 30)
         elif operação[x] == "F":
-            fila1.append(ultimo1 + 1)
+            ultimo1 += 1
+            fila1.append(ultimo1)
         elif operação[x] == "G":
-            fila2.append(ultimo2 + 2)
+            ultimo2 += 1
+            fila2.append(ultimo2)
         elif operação[x] == "S":
             sair = True
             break
