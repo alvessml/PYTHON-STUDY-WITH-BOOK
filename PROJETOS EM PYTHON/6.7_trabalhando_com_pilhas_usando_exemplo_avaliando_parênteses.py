@@ -4,9 +4,9 @@ pilha = []
 while x < len(expressão):
     if expressão[x] == "(":
         pilha.append("(")
-    if espressão[x] == ")":
+    elif expressão[x] == ")":
         if len(pilha) > 0:
-            topo = pilha.pop(-1)
+            pilha.pop(-1)
         else:
             pilha.append(")")  # Força uma mensagem de erro!
             break
@@ -15,3 +15,4 @@ if len(pilha) == 0:
     print("OK!!!")
 else:
     print("ERRO!")
+
