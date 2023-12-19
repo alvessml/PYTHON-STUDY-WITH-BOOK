@@ -15,7 +15,7 @@ while x < len(lista_sem_repetição):
         break
     x += 1
 
-if x < len(list(sem_repetição)):
+if x < len(lista_sem_repetição):
     print(f"{num} achado na posição {x}")
 else:
     print(f"{num} não achado!")
