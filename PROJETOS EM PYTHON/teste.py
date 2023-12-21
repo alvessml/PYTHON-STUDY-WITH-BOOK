@@ -1,8 +1,17 @@
-produto1 = [ "maçã", 10, 0.30]
-produto2 = [ "pera", 5, 0.75]
-produto3 = [ "kiwi", 4, 0.98]
-compras = [ produto1, produto2, produto3]
-for e in compras:
-    print("Produto: %s" % e[0])
-    print("Quantidade: %d" % e[1])
-    print("Preço: %5.2f" % e[2])
+L = [7,4,3,12,8]
+fim = 5 
+while True: 
+    trocou = False 
+    x=0 
+    while x < (fim-1): 
+        if L[x] > L[x+1]: 
+            trocou = True 
+            temp=L[x] 
+            L[x]=L[x+1]
+            L[x+1]=temp
+        x+=1
+    if not trocou: 
+        break
+    False
+for e in L:
+    print(e)
