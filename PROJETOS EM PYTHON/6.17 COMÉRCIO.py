@@ -14,7 +14,8 @@ def comercio():
 
     compra = []
     while True:
-        produto = int(input("Digite o némero do produto desejado [1][2][3][4] ou [5] para sair: "))
+        produto = int(
+            input("Digite o némero do produto desejado [1][2][3][4] ou [5] para sair: "))
         if produto >= 5:
             break
         quantidade = int(input("Quantidade: "))
@@ -41,7 +42,7 @@ def processo(estoque, compra):
         produto, quantidade = venda
         preco = estoque[produto][1]
         custo = preco * quantidade
-        print(f"{quantidade} x R${preco:.2f} = R${custo:.2f}")
+        print(f"{produto}: {quantidade} x R${preco:.2f} = R${custo:.2f}")
         estoque[produto][0] -= quantidade
         total += custo
     print("\n")
@@ -52,7 +53,8 @@ def main():
     estoque, compra = comercio()
     estoque = processo(estoque, compra)
 
-    print("Estoque disponível no momento:")
+    print("-=" * 30)
+    print("Estoque disponível no momento:\n")
 
     for chave, dados in estoque.items():
         print(f"Descrição: {chave}")
