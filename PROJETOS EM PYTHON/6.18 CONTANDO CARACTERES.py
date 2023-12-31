@@ -1,5 +1,4 @@
-word = input(
-    "Digite uma frase ou palavra, para saber quantas letras há repetida pelo dicionário: ")
+word = input(Digite uma frase ou palavra, para saber quantas letras há repetida pelo dicionário: ")
 d = {}
 for letra in word:
     if letra == " ":
