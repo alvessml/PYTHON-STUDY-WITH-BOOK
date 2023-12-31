@@ -1,5 +1,4 @@
-L = list("Alô Mundo")
-L[0] = "a"
-print(L)
-s = "".join(L)
-print(s)
+s="Um dia de sol"
+
+print(s.rfind("d"))
+print(s.find("d"))
