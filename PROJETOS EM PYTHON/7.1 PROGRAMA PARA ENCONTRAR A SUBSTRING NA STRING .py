@@ -1,4 +1,5 @@
-s = "AABBEFAATT"
+s1 = input("Digite uma string qualquer: ")
+s2 = input("Digite qual posição da substring você quer encontrar: ")
 
-e = s.find("BE")
-print(f"BE encontrado na posição {e} de {s}.")
+e = s1.find(s2)
+print(f"BE encontrado na posição {e} de {s1}.")
