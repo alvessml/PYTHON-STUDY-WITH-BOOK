@@ -1,5 +1,4 @@
-m="Uma linha\noutra linha\ne mais uma\n"
+s="125"
+p="alô"
 
-print(m, "\n")
-
-print(m.splitlines())
+print(p.isalpha())
