@@ -1,4 +1,4 @@
 s="125"
-p="alô"
+p="alo"
 
 print(p.isalpha())
