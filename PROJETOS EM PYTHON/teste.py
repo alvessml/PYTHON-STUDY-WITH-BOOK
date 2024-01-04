@@ -1,4 +1,1 @@
-s="125"
-p="alo"
-
-print(p.isalpha())
+print("{0:0,}".format(1175326))
