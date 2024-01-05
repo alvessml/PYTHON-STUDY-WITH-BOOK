@@ -1,1 +1,1 @@
-print("{:e}".format(1004.5))
+print("X==:==\nX  :  ")
