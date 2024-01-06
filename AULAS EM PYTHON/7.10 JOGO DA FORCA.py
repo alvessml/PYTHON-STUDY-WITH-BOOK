@@ -13,7 +13,7 @@ while True:
         senha += letra if letra in acertos else "."
     print(f"senha: {senha}")
 
-    # SE MINHA SENHA ESTIVER IGUAL A PALAVRA, ENTÃO EU ACERTEI TODAS! #
+    # SE MINHA SENHA ESTIVER IGUAL A PALAVRA, ENTÃO EU ACERTEI TODAS, DEPOIS IRÁ FINALIZAR! #
     if senha == palavra:
         print("--"*30)
         print("Você acertou!")
@@ -59,7 +59,7 @@ while True:
     print("X%s" % linha3)
 
     # IRÁ PRINTAR O CHÃO. #
-    print("X\n==========")
+    print("X\n===========")
     if erros == 6:
         print("\nEnforcado!!!")
         break
