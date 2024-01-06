@@ -54,5 +54,7 @@ while True:
     #
     print("X\n==========")
     if erros == 6:
-        print("\nEnforcado!!!")
+        print("\nEnforcado!!!\n")
+        print("-="*15)
+        print(f"Palavra certa era -> {palavra}")
         break
