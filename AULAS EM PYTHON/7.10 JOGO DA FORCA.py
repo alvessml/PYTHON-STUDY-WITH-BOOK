@@ -9,8 +9,7 @@ erros = 0
 while True:
     senha = ""
     for letra in palavra:
-
-        # VAI IGUAL A MINHA LETRA SE EU ACERTA A LETRA DA SENHA, SE NÃO IRÁ PERMANECER OS " . ". #
+        # SE ACERTAR A SENHA VAI IGUAL A MINHA LETRA, SE NÃO IRÁ PERMANECER OS " . ". #
         senha += letra if letra in acertos else "."
     print(f"senha: {senha}")
 
@@ -48,6 +47,7 @@ while True:
         linha2 = " /|  "
     elif erros >= 4:
         linha2 = " /|\ "
+    # IRÁ PRINTAR AS PARTES DO CORPO ACIMA DAS PERNAS. #
     print("X%s" % linha2)
 
     linha3 = ""
@@ -55,8 +55,11 @@ while True:
         linha3 += " /   "
     elif erros >= 6:
         linha3 += " / \ "
+    # IRÁ PRINTAR AS PARTES AS PERNAS. #
     print("X%s" % linha3)
+
+    # IRÁ PRINTAR O CHÃO. #
     print("X\n==========")
     if erros == 6:
-        print("Enforcado!!!")
+        print("\nEnforcado!!!")
         break
