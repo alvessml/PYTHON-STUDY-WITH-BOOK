@@ -39,10 +39,10 @@ while True:
     # DESENHO DO BONECO DA FORCA.
     print("X==:==\nX  :  ")
     print("X  O  " if erros >= 1 else "X")
+    #
     linha2 = ""
     if erros == 2:
         linha2 = "  |  "
-
     elif erros == 3:
         linha2 = " /|  "
     elif erros >= 4:
