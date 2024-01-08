@@ -22,7 +22,7 @@ while True:
     tentativas = input("\nDigite uma letra: ").lower().strip()
     if tentativas in digitadas:
         print("Você já digitou esta letra!")
-        continue
+        
     else:
         digitadas += tentativas
         if tentativas in palavra:
