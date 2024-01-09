@@ -31,7 +31,7 @@ X
 
 """
 linhas = []
-
+#                      "QUEBRA A STRING EM VÁRIAS LINHAS"
 for linha in linhas_txt.splitlines():
     linhas.append(list(linha))
 

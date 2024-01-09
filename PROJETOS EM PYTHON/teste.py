@@ -1,38 +1,19 @@
-palavras = [
-          "casa",
-          "bola",
-          "mangueira",
-          "uva",
-          "quiabo",
-          "computador",
-          "cobra",
-          "lentilha",
-          "arroz"
-     ]
+from random import randint 
 
-indice = int(input("Digite um número: "))
-palavra = palavras[(indice * 776) % len(palavras)]
+print("=-"*10+"JOGO DA VELHA".center(20)+"-="*10)
 
-for _ in range(100):
-    print()
+matriz = [[x]*3 for x in range(3)]
+escolhido = []
+while True: 
 
-digitadas = []
-acertos = []
-erros = 0
+    posição1 = int(input("Digite qual local você vai jogar: "))
+    if posição1 in escolhido:
+        print("Já foi jogado neste loca! insire outro local !")
+        continue
+    jogador1 = input("Digite (X ou O): ")
 
-linhas_txt = """
-X==:==
-X  :
-X
-X
-X
-X
-========
-
-"""
-linhas = []
-
-for linha in linhas_txt.splitlines():
-    linhas.append(list(linha))
-
-print(linhas)
+    posição2 = int(input("Digite qual local você vai jogar: "))
+    if posição2 in escolhido:
+        print("Já foi jogado neste loca! insire outro local !")
+        continue
+    jogador2 = input("Digite (X ou O): ")
