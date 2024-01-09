@@ -1,4 +1,4 @@
-velha = """                 posições
+velha = """         POSIÇÕES
    |   |       7 | 8 | 9
 ---+---+---   ---+---+---
    |   |       4 | 5 | 6
@@ -25,5 +25,25 @@ for linha in velha.splitlines():
     tabuleiro.append(list(linha))
 
 
-for _ in tabuleiro:
-    print(_)
+jagador = "X" # Começa jogando com X
+jogando = True
+jogadas = 0
+while True:
+    for t in tabuleiro:
+        print("".join(t))
+    
+    if not jogando: # Termina após imprimir o tabuleiro final
+        break
+
+    if jogadas == 9: # Dará velha
+        print("Deu velha!!! Ninguém ganhou.")
+        break
+
+
+    jogada = int(input(f"Digite a posiçãõ a jogar 1 á 9 (jogador {jogador}): "))
+    
+    if jogada < 1  or jogada > 9:
+        print("Posição inválida")
+        continue
+
+    if tabuleiro[posições[]]
