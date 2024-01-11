@@ -1,19 +1,14 @@
-from random import randint 
+posições = [
+    None,    # Elemento adicionado para facilitar índices
+    (5, 1),  # 1
+    (5, 5),  # 2
+    (5, 9),  # 3
+    (3, 1),  # 4
+    (3, 5),  # 5
+    (3, 9),  # 6
+    (1, 1),  # 7
+    (1, 5),  # 8
+    (1, 9)   # 9
+    ]
 
-print("=-"*10+"JOGO DA VELHA".center(20)+"-="*10)
-
-matriz = [[x]*3 for x in range(3)]
-escolhido = []
-while True: 
-
-    posição1 = int(input("Digite qual local você vai jogar: "))
-    if posição1 in escolhido:
-        print("Já foi jogado neste loca! insire outro local !")
-        continue
-    jogador1 = input("Digite (X ou O): ")
-
-    posição2 = int(input("Digite qual local você vai jogar: "))
-    if posição2 in escolhido:
-        print("Já foi jogado neste loca! insire outro local !")
-        continue
-    jogador2 = input("Digite (X ou O): ")
+print(posições)

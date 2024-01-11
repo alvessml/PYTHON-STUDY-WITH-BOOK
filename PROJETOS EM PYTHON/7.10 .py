@@ -20,14 +20,27 @@ posições = [
     (1, 9)   # 9
     ]
 
+# Posições que leva o jogador a ganhar o jogo!
+ganho = [
+            [1, 2, 3], # Linhas
+            [4, 5, 6],
+            [7, 8, 9],
+            [7, 4, 1], # Colunas
+            [8, 5, 2],
+            [9, 6, 3],
+            [7, 5, 3], # Diagonais
+            [1, 5, 9]
+        ] 
+
 tabuleiro = []
 for linha in velha.splitlines():
     tabuleiro.append(list(linha))
 
 
-jagador = "X" # Começa jogando com X
+jogador = "X" # Começa jogando com X
 jogando = True
 jogadas = 0
+
 while True:
     for t in tabuleiro:
         print("".join(t))
@@ -40,10 +53,33 @@ while True:
         break
 
 
-    jogada = int(input(f"Digite a posiçãõ a jogar 1 á 9 (jogador {jogador}): "))
+    jogada = int(input(f"Digite a posição a jogar 1 á 9 (jogador {jogador}): "))
     
+    #Jogada sempre terá que está entre 1 a 9.
     if jogada < 1  or jogada > 9:
         print("Posição inválida")
         continue
 
-    if tabuleiro[posições[]]
+    # Irá verificar se a posição está livre.
+# Ex:jogad = 1 tabuleiro [    5     ] [         1         ] (*Primeira)
+# posição, irá verificar se está vazia ou não.
+    if tabuleiro[posições[jogada][0]] [posições[jogada][1]] != " ":
+        print("Posição ocupada.")
+        continue   
+
+    # Marca a jogada do jogador na velha
+    tabuleiro[posições[jogada][0]][posições[jogada][1]] = jogada
+
+    
+    #-------------------------------------------------------------#
+    # Verificar se ganhou
+    for p in ganho:
+        for x in p:
+            if tabuleiro[posições[x][0]][posições[x][1]] != jogador:
+                break
+        
+        # Verificar se o for termina sem break, todas as posições
+        # de p pertencem ao mesmo jogador!
+        else:
+            print(f"O jogador {jogador} ganhou ({p}): ")
+            jogando = False
