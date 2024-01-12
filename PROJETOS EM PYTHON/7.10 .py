@@ -41,11 +41,9 @@ jogando = True
 jogadas = 0
 
 while True:
-    print("-="*30)
     for t in tabuleiro:  # Imprime o tabuleiro
         # (map(str, t)) Converte cada elemento "t" da lista para uma string.
-        # (método join) Junta os elementos da lista (ou iterável) usando
-        # uma string vazia "" como separador.. 
+        
         print("".join(map(str, t)))
 
     if not jogando:  # Termina após imprimir o tabuleiro final
@@ -55,7 +53,8 @@ while True:
         print("Deu velha!!! Ninguém ganhou.")
         break
 
-    jogada = int(input(f"Digite a posição a jogar 1 á 9 (jogador {jogador}): "))
+    jogada = int(
+        input(f"Digite a posição a jogar 1 á 9 (jogador {jogador}): "))
 
     # Jogada sempre terá que está entre 1 a 9.
     if jogada < 1 or jogada > 9:
@@ -70,7 +69,7 @@ while True:
         continue
 
     # Marca a jogada do jogador na velha
-    tabuleiro[posições[jogada][0]][posições[jogada][1]] = jogador
+    tabuleiro[posições[jogada][0]][posições[jogada][1]] = jogada
 
     # -------------------------------------------------------------#
     # Verificar se ganhou
@@ -82,7 +81,6 @@ while True:
         # Verificar se o for termina sem break, todas as posições
         # de p pertencem ao mesmo jogador!
         else:
-            print("-="*30)
             print(f"O jogador {jogador} ganhou ({p}): ")
             jogando = False
             break
