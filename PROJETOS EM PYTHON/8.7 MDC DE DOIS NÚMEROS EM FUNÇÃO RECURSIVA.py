@@ -3,4 +3,4 @@ def mdc(a, b):
         return a
     return mdc(b, a % b)
         
-print(mdc(18, 15))   
+print(mdc(32, 24))   
