@@ -1,4 +1,9 @@
-def mmc(a, b):
+def mdc(a, b):
     if b == 0:
         return a
-    return mmc(abs(a*b)/dc)
+    return mdc(b, a % b)
+
+def mmc(a, b):
+    return abs(a * b) / mdc(a, b)
+
+print(int(mmc(47, 18)))
