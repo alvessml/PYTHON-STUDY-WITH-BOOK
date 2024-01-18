@@ -1,7 +1,9 @@
-def fibonacci(n):
-    if n <= 1:
-        return n
-    else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+def valida_string(s, mín, máx):
+    tamanho = len(s)
+    return mín <= tamanho <= máx
 
-print(fibonacci(5))
+
+print(valida_string("", 0, 5))
+print(valida_string("ABC", 2, 3))
+print(valida_string("ABCEFG", 1, 5))
+print(valida_string("ABCEFG", 1, 10))
