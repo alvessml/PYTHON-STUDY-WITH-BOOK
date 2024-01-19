@@ -4,4 +4,4 @@ def barra(n=10, c="*"):
 L=[ [5, "-"], [10, "*"], [5], [6,"."] ]
 
 for e in L:
-    print(*e)
+    barra(*e)
