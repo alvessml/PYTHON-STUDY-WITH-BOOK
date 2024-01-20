@@ -8,5 +8,3 @@ def valida_inteiro(mensagem, mínimo, máximo):
                 print(f"Digite um valor entre {mínimo} e {máximo}")
         except:
             print("Você deve digitar um número inteiro")
-
-valida_inteiro(40, 30, 50)
