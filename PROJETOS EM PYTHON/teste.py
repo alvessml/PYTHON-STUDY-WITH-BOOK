@@ -1,9 +1,10 @@
-def valida_string(s, mín, máx):
-    tamanho = len(s)
-    return mín <= tamanho <= máx
+from random import randint 
+L = []
+x = 0
+while x > 10:
+    n = randint(1, 20)
+    if n not in L:
+        L.append(n)
+        x += 1
 
-
-print(valida_string("", 0, 5))
-print(valida_string("ABC", 2, 3))
-print(valida_string("ABCEFG", 1, 5))
-print(valida_string("ABCEFG", 1, 10))
+print(L)

@@ -1,4 +1,4 @@
-from ENTRADA import valida_inteiro
+from ENTRADA import valida_inteiro #RENOMEI O MÓDULO .PY "8.34 ENTRADA" PARA SOMENTE "ENTRADA" FUNCIONAR !!!!
 
 L = []
 for x in range(10):

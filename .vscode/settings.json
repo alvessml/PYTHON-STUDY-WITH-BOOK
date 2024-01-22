@@ -4,5 +4,6 @@
     },
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.formatting.provider": "none"
+    "python.formatting.provider": "none",
+    "python.REPL.enableREPLSmartSend": false
 }
