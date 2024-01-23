@@ -21,10 +21,10 @@ erros = 0
 linhas_txt = """
 X==:==
 X  :
-X
-X
-X
-X
+X    
+X    
+X     
+X      
 =======
 
 """
