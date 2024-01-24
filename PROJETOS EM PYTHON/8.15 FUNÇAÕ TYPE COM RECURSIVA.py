@@ -1,4 +1,4 @@
-ESPAÇOS_POR_NÍVEL = 3
+ESPAÇOS_POR_NÍVEL = 4
 
 def imprime_elementos(l, nivel = 0):
     espaços = " " * ESPAÇOS_POR_NÍVEL * nivel
